@@ -5,8 +5,8 @@ let secondNum = '';
 let operator = '';
 let temRes = '';
 
-const lightTheme = './src/styles/light.css';
-const darkTheme = './src/styles/dark.css';
+const lightTheme = './src/styles/light.b152146b.css';
+const darkTheme = './src/styles/dark.d1ed3a19.css';
 
 document.addEventListener('DOMContentLoaded', setTheme)
 const theme = document.getElementById('theme');
