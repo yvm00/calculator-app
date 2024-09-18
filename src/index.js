@@ -29,7 +29,7 @@ function changeTheme() {
 }
 
 function setTheme() {
-  theme.href = localStorage.getItem('theme') || lightTheme;
+  theme.href = localStorage.getItem('theme') || './src/styles/light.b152146b.css';
   icon.innerHTML = localStorage.getItem('icon') || 'light_mode';
 }
 
