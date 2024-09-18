@@ -1,12 +1,12 @@
-let currentDisplay = '0';
-let resultDisplay = false;
-let firstNum = '';
-let secondNum = '';
-let operator = '';
-let temRes = '';
+// let currentDisplay = '0';
+// let resultDisplay = false;
+// let firstNum = '';
+// let secondNum = '';
+// let operator = '';
+// let temRes = '';
 
-// const lightTheme = './src/styles/light.b152146b.css';
-// const darkTheme = './src/styles/dark.d1ed3a19.css';
+// const lightTheme = '/light.b152146b.css';
+// const darkTheme = '/dark.d1ed3a19.css';
 
 // document.addEventListener('DOMContentLoaded', setTheme)
 // const theme = document.getElementById('theme');
@@ -29,7 +29,7 @@ let temRes = '';
 // }
 
 // function setTheme() {
-//   theme.href = localStorage.getItem('theme') || './src/styles/light.b152146b.css';
+//   theme.href = localStorage.getItem('theme') || lightTheme;
 //   icon.innerHTML = localStorage.getItem('icon') || 'light_mode';
 // }
 
