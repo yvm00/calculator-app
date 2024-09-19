@@ -19,5 +19,6 @@
 build/
 dist/
 .cache/
+.design/
 node_modules
 node_modules

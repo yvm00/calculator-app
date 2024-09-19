@@ -1,37 +1,40 @@
-// let currentDisplay = '0';
-// let resultDisplay = false;
-// let firstNum = '';
-// let secondNum = '';
-// let operator = '';
-// let temRes = '';
+let currentDisplay = '0';
+let resultDisplay = false;
+let firstNum = '';
+let secondNum = '';
+let operator = '';
+let temRes = '';
 
-// const lightTheme = '/light.b152146b.css';
-// const darkTheme = '/dark.d1ed3a19.css';
+const icon = document.querySelector('.material-icons');
+icon.addEventListener('click', toggleTheme);
 
-// document.addEventListener('DOMContentLoaded', setTheme)
-// const theme = document.getElementById('theme');
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+    icon.innerHTML = localStorage.getItem('icon')
+}
 
-// const icon = document.querySelector('.material-icons');
-// icon.addEventListener('click', changeTheme);
-// function changeTheme() {
-//     console.log(theme.getAttribute('href'));
-//     if (theme.getAttribute('href') == lightTheme) {
-//         theme.href = darkTheme;
-//         icon.innerHTML = 'brightness_2';
-//         localStorage.setItem('theme', darkTheme);
-//         localStorage.setItem('icon', 'brightness_2');
-//     } else {
-//         theme.href = lightTheme;
-//         icon.innerHTML = 'brightness_5';
-//         localStorage.setItem('theme', lightTheme);
-//         localStorage.setItem('icon', 'brightness_5');
-//     }
-// }
+function toggleTheme() {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        icon.innerHTML = 'brightness_5';
+        localStorage.setItem('icon', 'brightness_5');
+        setTheme('theme-light');
+    } else {
+        icon.innerHTML = 'brightness_5';
+        localStorage.setItem('icon', 'brightness_2');
+        setTheme('theme-dark');
+    }
+}
 
-// function setTheme() {
-//   theme.href = localStorage.getItem('theme') || lightTheme;
-//   icon.innerHTML = localStorage.getItem('icon') || 'light_mode';
-// }
+(function () {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+        localStorage.setItem('icon', 'brightness_2');
+    } else {
+        setTheme('theme-light');
+        localStorage.setItem('icon', 'brightness_5');
+    }
+})();
 
 const btnNum = document.querySelectorAll('[data-type="number"]');
 btnNum.forEach((el) =>
