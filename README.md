@@ -1,3 +1,13 @@
+<p align="center"> 
+   <img src="/images/calculator.png" alt="Alt text" title="Optional title">
+  <h2 align="center"><b>Calculator app</b></h2>
+
+  <p align="center">
+    <p style align="center">📧 A women’s safety website that sends emails and messages to your trusted ones.🚺</p> 
+    <br />
+  </p>
+</p>
+
 #  Calculator app
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
