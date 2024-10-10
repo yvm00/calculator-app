@@ -23,3 +23,6 @@
 - Perform mathematical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 
+<img src="/images/calc-light.png" >
+<img src="/images/calc-dark.png" >
+
