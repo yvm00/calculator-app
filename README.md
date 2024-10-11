@@ -4,7 +4,10 @@
       <br />
   <p align="center">
     <p style align="center">A solution to the Calculator app challenge on Frontend Mentor</p> 
-    <br />
+  </p>
+  <p align="center">
+          <a align="center" href="https://yvm00.github.io/calculator-app/">click here to see demo</a>
+       <br />
   </p>
 </p>
 
